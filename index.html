@@ -26,7 +26,7 @@
     <div class="flex w-[90%] max-w-xl h-fit bg-white shadow-md rounded-lg overflow-hidden">  
         <!-- بخش فرم ورود -->  
         <div class="w-1/2 p-8 center flex-col gap-4">  
-            <h2 class="text-2xl text-center mb-4 font-[morabba]">ورود به حساب کاربری</h2>  
+            <h2 class="text-2xl text-center mb-4 text-gray-700 font-[morabba]">ورود به حساب کاربری</h2>  
             <form id="student-form">  
                 <div class="mb-4">  
                     <label for="username" id="name" class="block text-sm font-medium text-gray-700"> نام و نام خانوادگی</label>  
@@ -42,8 +42,8 @@
                     <label for="part" class="block text-sm font-medium text-gray-700">نقش</label>
                     <select onchange="redirectUser()" name="part" id="part" class="mt-1 w-full p-2 border border-gray-300 rounded-md bg-white" required>
                         <option value="selected" hidden selected></option>
-                        <option value="teacher">آموزگار</option>
-                        <option value="student">دانش آموز</option>
+                        <option value="teacher" class="text-gray-600">آموزگار</option>
+                        <option value="student" class="text-gray-600">دانش آموز</option>
                     </select>
                 </div>  
                 <button type="submit" onclick="redirectUser(event)"    
